@@ -2,7 +2,7 @@
 
 **Project Neptune** 是一个端到端的低成本无人船（USV）开发平台。它集成了 **ROS 2 Humble** 上位机导航、**STM32** 实时闭环控制以及 **自研集成 PCB**，旨在为教学、科研及工程验证提供一个可高度复现的开源方案。
 
-[快速开始](https://www.google.com/search?q=%23-%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2) | [硬件文档](https://www.google.com/search?q=%23-%E7%A1%AC%E4%BB%B6%E6%80%BB%E4%BD%93%E8%AF%B4%E6%98%8E) | [系统架构](https://www.google.com/search?q=%23-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84) | [开发路线图](https://www.google.com/search?q=%23-roadmap)
+[快速开始](#快速部署) | [硬件文档](#硬件总体说明) | [系统架构](#系统架构) | [开发路线图](#roadmap)
 
 ---
 
@@ -41,10 +41,10 @@ graph TD
 
 | 文件夹 | 内容说明 |
 | --- | --- |
-| **[BOM](https://www.google.com/search?q=./hardware/BOM/)** | 物料清单，包含详细的元件规格与立创商城编号 |
-| **[Gerber](https://www.google.com/search?q=./hardware/Gerber/)** | 生产制造文件，可直接提交工厂打样 (含钻孔、阻焊、丝印层) |
-| **[Project_File](https://www.google.com/search?q=./hardware/Project_File/)** | EDA 工程源文件 (支持嘉立创 EDA 专业版及 Altium Designer 导出格式) |
-| **[Schematic](https://www.google.com/search?q=./hardware/Schematic/)** | 原理图 PDF，方便快速查阅电路逻辑 |
+| **[BOM](./hardware/BOM/)** | 物料清单，包含详细的元件规格与立创商城编号 |
+| **[Gerber](./hardware/Gerber/)** | 生产制造文件，可直接提交工厂打样 (含钻孔、阻焊、丝印层) |
+| **[Project_File](./hardware/Project_File/)** | EDA 工程源文件 (支持嘉立创 EDA 专业版及 Altium Designer 导出格式) |
+| **[Schematic](./hardware/Schematic/)** | 原理图 PDF，方便快速查阅电路逻辑 |
 
 ### ⚡ 电源与驱动设计
 
