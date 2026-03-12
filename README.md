@@ -88,7 +88,7 @@ docker build -t ros2_humble_zh:v1 .
 docker-compose up --build
 
 # 进入容器
-docker-compose exec ros2_ws bash
+docker-compose exec ros2_dev bash
 ```
 
 > 注意：这是一个开发环境，生产部署请参考硬件文档和系统架构部分。
