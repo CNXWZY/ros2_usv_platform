@@ -74,6 +74,13 @@ graph TD
 - `Dockerfile`: 用于构建 ROS 2 Humble 开发镜像。
 - `docker-compose.yml`: 定义了服务、网络和卷，便于一键启动开发环境。
 
+### 镜像构建
+
+```bash
+# 构建 Docker 镜像
+docker build -t ros2-usv-dev .
+```
+
 ### 使用方法
 
 ```bash
