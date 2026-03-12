@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  ros2_dev:
+    image: ros2_humble_zh:v1
+    container_name: ros2_dev
+    hostname: ros2dev
+    network_mode: host
+
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./workspace:/workspace   # 可选：把你的代码挂载进来
+
+    privileged: true   # 允许访问硬件、USB、网络等
+    stdin_open: true
+    tty: true
+
