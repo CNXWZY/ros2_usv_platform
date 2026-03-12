@@ -78,7 +78,7 @@ graph TD
 
 ```bash
 # 构建 Docker 镜像
-docker build -t ros2-usv-dev .
+docker build -t ros2_humble_zh:v1 .
 ```
 
 ### 使用方法
