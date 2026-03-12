@@ -67,6 +67,27 @@ graph TD
 
 ## ⌨️ 快速部署
 
+## 🐳 开发环境
+
+本项目提供了 Docker 开发环境，以便于快速搭建和统一依赖。
+
+- `Dockerfile`: 用于构建 ROS 2 Humble 开发镜像。
+- `docker-compose.yml`: 定义了服务、网络和卷，便于一键启动开发环境。
+
+### 使用方法
+
+```bash
+# 构建镜像并启动服务
+docker-compose up --build
+
+# 进入容器
+docker-compose exec ros2_ws bash
+```
+
+> 注意：这是一个开发环境，生产部署请参考硬件文档和系统架构部分。
+
+
+
 ### 1. 硬件连接 (树莓派 4B ↔ 控制板)
 
 | 树莓派 4B | 控制板接口 | 说明 |
