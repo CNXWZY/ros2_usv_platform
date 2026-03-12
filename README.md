@@ -46,6 +46,15 @@ graph TD
 | **[Project_File](./hardware/Project_File/)** | EDA 工程源文件 (支持嘉立创 EDA 专业版及 Altium Designer 导出格式) |
 | **[Schematic](./hardware/Schematic/)** | 原理图 PDF，方便快速查阅电路逻辑 |
 
+### 📂 固件目录结构
+
+| 文件夹 | 内容说明 |
+| --- | --- |
+| **[firmware/Slave_Device_Stm32F103C8T6](./firmware/Slave_Device_Stm32F103C8T6/)** | STM32F103C8T6 从设备固件源码 |
+| ├── Start/ | 启动文件与 CMSIS 头文件 |
+| ├── Library/ | STM32 标准外设库 |
+| └── DebugConfig/ | Keil 调试配置 |
+
 ### ⚡ 电源与驱动设计
 
 * **输入电压**: 12V DC (支持 3S 锂电池供电)。
@@ -125,12 +134,16 @@ ros2 launch usv_bringup robot.launch.py
 ```text
 ros2_usv_platform/
 ├── firmware/          # STM32 固件源码 (C/C++)
-├── ros2_ws/           # ROS 2 工作空间 (Bringup, Interfaces, Description)
+│   └── Slave_Device_Stm32F103C8T6/   # 从设备固件
 ├── hardware/          # 硬件设计资源
 │   ├── BOM/           # 零件清单
 │   ├── Gerber/        # 生产制造文件
 │   ├── Project_File/  # EDA 工程源码
 │   └── Schematic/     # 原理图 PDF
+├── workspace/         # Docker 开发环境工作空间
+├── Dockerfile         # ROS 2 Humble 开发镜像
+├── docker-compose.yml # Docker Compose 配置
+├── ros2_ws/           # ROS 2 工作空间 (可选，需自行创建)
 └── LICENSE            # CC BY-NC-SA 4.0
 
 ```
